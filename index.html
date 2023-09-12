@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!--LEFT CONTAINER-->  
+    <div class="left-container">
+      <!--NUMBER ICON-->
+      <div class="steps">
+        <span class="step step--0 active-step" >1</span>
+        <div class="step-detail">    
+          <p class="step-no">STEP 1</p>
+          <p class="step-label">YOUR INFO</p>
+        </div>
+      </div>
+      <div class="steps">
+        <span class="step step--1">2</span>
+        <div class="step-detail">
+          <p class="step-no">STEP 2</p>
+          <p class="step-label">SELECT PLAN</p>
+        </div>
+      </div>
+      <div class="steps">
+        <span class="step step--2">3</span>
+        <div class="step-detail">
+          <p class="step-no">STEP 3</p>
+          <p class="step-label">ADD-ONS</p>
+        </div>
+      </div>
+      <div class="steps">
+        <span class="step step--3">4</span>
+        <div class="step-detail">
+          <p class="step-no">STEP 4</p>
+          <p class="step-label">SUMMARY</p>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+
+      <div class="in-view inview-active  in-view--0 " id="fill-page" >
+
+        <!--FILL INPUT PAGE-->
+        <div class="text-box text-box--1 active-view">
+          <!--PERSONAL INFO-->
+          <h2 class="heading">Personal info</h2>
+          <p class="info-text">Please provide your name, email, address, and phone number.</p>
+          <form action="fill">
+            <div class="nam-field">
+              <div class="label-err">
+                <label for="name">Name</label>
+                <span class="name-err-message"></span>
+              </div>
+              <input type="text" name="name" id="name" class="name-field" placeholder="e.g. Stephen King" required>
+            </div>
+          
+            <div class="mail-field">
+              <div class="label-err">
+                <label for="email">Email Address</label>
+                <span class="mail-err-message"></span>
+              </div>
+              <input type="email" name="email" id="email" class="email-field" placeholder="e.g. stephenking@lorem.com" required>
+            </div>
+          
+            <div class="no-field">
+              <div class="label-err">
+                <label for="name">Phone Number</label>
+                <span class="no-err-message"></span>
+              </div>
+              <input type="text" name="name" id="name" class="number-field" placeholder="e.g. +1 234 567 890" required>
+            </div>
+          </form>
+        </div>
+
+        <!--SELECT PLAN-->
+        <div class="text-box text-box--2 " id="select-plan">
+          <h2 class="heading">Select your plan</h2>
+          <p class="info-text">You have the option of monthly or yearly billing.</p>
+          <div class="select-plan">
+            <!--MONTHLY PLAN-->
+            <div class="toggle-plan active-toggle-plan month-plan">
+              <div class="plan plan--1 active-plan">
+                <img src="./assets/images/icon-arcade.svg" alt="image icon" class="plan-icon">
+                <div class="plan-details">
+                  <p class="plan-heading active-heading">Arcade</p>
+                  <p class="plan-price">$9/mo</p>
+                </div>
+              </div>
+        
+              <div class="plan plan--2 ">
+                <img src="./assets/images/icon-advanced.svg" alt="image icon" class="plan-icon">
+                <div class="plan-details">
+                  <p class="plan-heading">Advanced</p>
+                  <p class="plan-price">$12/mo</p>
+                </div>
+              </div>
+        
+              <div class="plan plan--3">
+                <img src="./assets/images/icon-pro.svg" alt="image icon" class="plan-icon">
+                <div class="plan-details">
+                  <p class="plan-heading">Pro</p>
+                  <p class="plan-price">$15/mo</p>
+                </div>
+              </div>
+            </div>
+            <!--YEARLY PLAN-->
+            <div class="toggle-plan year-plan">
+              <div class="plan plan--1 active-plan">
+                <img src="./assets/images/icon-arcade.svg" alt="image icon" class="plan-icon">
+                <div class="plan-details">
+                  <p class="plan-heading">Arcade</p>
+                  <p class="plan-price">$90/yr</p>
+                  <p class="sub-bonus">2 months free</p>
+                </div>
+              </div>
+              <div class="plan plan--2 ">
+                <img src="./assets/images/icon-advanced.svg" alt="image icon" class="plan-icon">
+                <div class="plan-details">
+                  <p class="plan-heading">Advanced</p>
+                  <p class="plan-price">$120/yr</p>
+                  <p class="sub-bonus">2 months free</p>
+                </div>
+              </div>
+              <div class="plan plan--3">
+                <img src="./assets/images/icon-pro.svg" alt="image icon" class="plan-icon">
+                <div class="plan-details">
+                  <p class="plan-heading">Pro</p>
+                  <p class="plan-price">$150/yr</p>
+                  <p class="sub-bonus">2 months free</p>
+                </div>
+              </div>
+            </div>
+        
+            <!--MONTHLY/ YEARLY-->
+            <div class="subscription-method">
+              <span>Monthly</span>
+              <div class="switch">
+                <div class="switch-toggle"></div>
+              </div>
+              <span>Yearly</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!--ADD ONS-->
+        <div class="text-box text-box--3">
+          <h2 class="heading">Pick add-ons</h2>
+          <p class="info-text">Add-ons help enhance your gaming experience.</p>
+        
+          <!--MONTHLY ADD ONS-->
+          <div class="add-ons active-add-ons month-adds-on">
+        
+            <div class="add-on add-auto">
+              <div class="add-on-icon">
+                <img src="./assets/images/icon-checkmark.svg" alt="image icon" class="add-icon">
+              </div>
+        
+              <div class="add-ons-details">
+                <p class="add-on-heading">Online Service</p>
+                <p class="add-on-info">Access to multiplayer games</p>
+              </div>
+        
+              <div class="add-on-price">+$1/mo</div>
+            </div>
+        
+            <div class="add-on add-auto">
+              <div class="add-on-icon">
+                <img src="./assets/images/icon-checkmark.svg" alt="image icon" class="add-icon">
+              </div>
+        
+              <div class="add-ons-details">
+                <p class="add-on-heading">Larger Storage</p>
+                <p class="add-on-info">Extra 1TB of cloud save</p>
+              </div>
+        
+              <div class="add-on-price">+$2/mo</div>
+            </div>
+        
+            <div class="add-on">
+              <div class="add-on-icon">
+                <input type="checkbox" class="check-box">
+              </div>
+        
+              <div class="add-ons-details">
+                <p class="add-on-heading">Customizable profile</p>
+                <p class="add-on-info">Custom theme on your profile.</p>
+              </div>
+        
+              <div class="add-on-price">+$2/mo</div>
+            </div>
+          </div>
+        
+          <!--YEARLY ADD ONS-->
+          <div class="add-ons year-adds-on">
+        
+            <div class="add-on">
+              <div class="add-on-icon">
+                <img src="./assets/images/icon-checkmark.svg" alt="image icon" class="add-icon">
+              </div>
+        
+              <div class="add-ons-details">
+                <p class="add-on-heading">Online Service</p>
+                <p class="add-on-info">Access to multiplayer games</p>
+              </div>
+        
+              <div class="add-on-price">+$10/yr</div>
+        
+            </div>
+            <div class="add-on">
+              <div class="add-on-icon">
+                <img src="./assets/images/icon-checkmark.svg" alt="image icon" class="add-icon">
+              </div>
+        
+              <div class="add-ons-details">
+                <p class="add-on-heading">Larger Storage</p>
+                <p class="add-on-info">Extra 1TB of cloud save</p>
+              </div>
+        
+              <div class="add-on-price">+$20/yr</div>
+            </div>
+        
+            <div class="add-on">
+              <div class="add-on-icon">
+                <input type="checkbox" class="check-box">
+              </div>
+        
+              <div class="add-ons-details">
+                <p class="add-on-heading">Customizable profile</p>
+                <p class="add-on-info">Custom theme on your profile.</p>
+              </div>
+        
+              <div class="add-on-price">+$20/yr</div>
+            </div>
+          </div>
+        </div>
+
+        <!--FINISH UP-->
+        <div class="text-box text-box--4">
+          <h2 class="heading">Finishing up</h2>
+          <p class="info-text">Double-check every thing looks OK before confirming.</p>
+        
+          <!--MONTH FINISH-->
+          <div class="finish-up ">
+            <div class="mnth-finish">
+              <div class="confirm-plan c-plan">
+                <p class="final-plan">Arcade(Monthly)</p>
+                <p class="final-amount">$9/mo</p>
+                <a href="#select-plan" class="change">Change</a>
+              </div>
+              <div class="confirm-add-on month-finish active-finish">
+                <p class="confirm-detail">Online service</p>
+                <p class="confirm-charges online-charges">$1/mo</p>
+                <p class="confirm-detail">Larger storage</p>
+                <p class="confirm-charges storage-charges">$2/mo</p>
+              </div>
+        
+              <div class="confirm-add-on year-finish">
+                <p class="confirm-detail">Online service</p>
+                <p class="confirm-charges online-charges">$10/yr</p>
+                <p class="confirm-detail">Larger storage</p>
+                <p class="confirm-charges storage-charges">$20/yr</p>
+              </div>
+            </div>
+        
+            <div class="total">
+              <p class="total-mo-yr">Total <span class="per">(per month)</span></p>
+              <p class="total-amount">$12/mo</p>
+            </div>
+        
+          </div>
+        </div>
+
+        <!-- NEXT AND PREV BUTTON -->
+        <div class="nxt-btn" data-btn="0">
+          <a href="#fill-page" class="prev-btn btn"></a>
+          <!-- <div></div> -->
+          <a href="#plan-change" class="personal-info-btn next-btn btn">Next Step</a>
+        </div>
+
+      </div>
+
+      
+      
+      <!--THANK YOU MESSAGE-->
+      <div class="thank-you hidden">
+        <img src="./assets/images/icon-thank-you.svg" alt="" class="thanks-icon">
+        <h2>Thank you!</h2>
+        <p class="thanks">Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need
+          support, please feel free to email us at support@loremgaming.com.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
