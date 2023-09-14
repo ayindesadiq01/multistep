@@ -1,16 +1,16 @@
-:root{
-/* ### Primary  */
---Marine-blue: hsl(213, 96%, 18%); 
---Purplish-blue: hsl(243, 100%, 62%);
---Pastel-blue: hsl(228, 100%, 84%);
---Light-blue: hsl(206, 94%, 87%); 
---Strawberry-red: hsl(354, 84%, 57%);
-/* ### Neutral  */
---Cool-gray: hsl(231, 11%, 63%);
---Light-gray: hsl(229, 24%, 87%);
---Magnolia: hsl(217, 100%, 97%);
---Alabaster: hsl(231, 100%, 99%);
---White: hsl(0, 0%, 100%);
+:root {
+  /* ### Primary  */
+  --Marine-blue: hsl(213, 96%, 18%);
+  --Purplish-blue: hsl(243, 100%, 62%);
+  --Pastel-blue: hsl(228, 100%, 84%);
+  --Light-blue: hsl(206, 94%, 87%);
+  --Strawberry-red: hsl(354, 84%, 57%);
+  /* ### Neutral  */
+  --Cool-gray: hsl(231, 11%, 63%);
+  --Light-gray: hsl(229, 24%, 87%);
+  --Magnolia: hsl(217, 100%, 97%);
+  --Alabaster: hsl(231, 100%, 99%);
+  --White: hsl(0, 0%, 100%);
 }
 
 * {
@@ -21,24 +21,24 @@
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: blue;
+  min-height: 100vh;
 }
 
 .wrapper {
   width: 100%;
   min-height: 100vh;
-  background-color:hsl(206, 94%, 87%);
+  background-color: hsl(206, 94%, 87%);
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
 .left-container {
-  background:url('./assets/images/bg-sidebar-mobile.svg');
+  background: url('./assets/images/bg-sidebar-mobile.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30vh;
+  height: 20vh;
   display: flex;
   justify-content: center;
   position: relative;
@@ -50,7 +50,7 @@ body {
 
 .steps {
   position: relative;
-  top: 10px;
+  top: 35px;
   margin-right: 1em;
 }
 
@@ -75,7 +75,8 @@ body {
 .right-container {
   position: relative;
   width: 100%;
-  background-color:hsl(217, 100%, 97%);
+  min-height: 80vh;
+  background-color: hsl(217, 100%, 97%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -90,13 +91,14 @@ body {
   display: none;
 }
 
-.active-view, .thank-you {
+.active-view,
+.thank-you {
   position: relative;
-  top: -80px;
+  top: -20px;
   padding: 1em;
   width: 90%;
   left: 5%;
-  background-color:hsl(231, 100%, 99%);
+  background-color: hsl(231, 100%, 99%);
   border-radius: 7px;
   display: grid;
 }
@@ -116,7 +118,7 @@ body {
   font-size: 1.02rem;
   font-weight: 500;
   line-height: 1.4em;
-  color:hsl(231, 11%, 63%);
+  color: hsl(231, 11%, 63%);
   margin-bottom: 1em;
 }
 
@@ -131,12 +133,12 @@ input {
 input::placeholder {
   font-size: .9rem;
   font-weight: 600;
-  color:hsl(229, 24%, 87%)
+  color: hsl(229, 24%, 87%)
 }
 
 label {
   font-weight: 600;
-  color:hsl(213, 96%, 18%);
+  color: hsl(213, 96%, 18%);
 }
 
 .label-err {
@@ -155,7 +157,7 @@ label {
   top: 0px;
   padding: .5em;
   width: 100%;
-  background-color:hsl(231, 100%, 99%);
+  background-color: hsl(231, 100%, 99%);
 }
 
 .prev-btn {
@@ -163,13 +165,13 @@ label {
   border: none;
   font-weight: 600;
   font-size: 1rem;
-  color:hsl(231, 11%, 63%);
+  color: hsl(231, 11%, 63%);
 }
 
 .next-btn {
-  background-color:hsl(213, 96%, 18%);
+  background-color: hsl(213, 96%, 18%);
   padding: .7em 1em;
-  color:hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   border: none;
   border-radius: 4px;
 }
@@ -179,6 +181,7 @@ label {
 .toggle-plan {
   display: none;
 }
+
 .active-toggle-plan {
   display: flex;
   flex-direction: column;
@@ -198,6 +201,7 @@ label {
   background-color: hsl(206, 94%, 87%);
   border: 1px solid hsl(243, 100%, 62%);
 }
+
 .plan-icon {
   width: 2em;
   margin-right: 1em;
@@ -206,28 +210,29 @@ label {
 .plan-heading {
   font-size: 1.2rem;
   font-family: 600;
-  color:hsl(213, 96%, 18%);
+  color: hsl(213, 96%, 18%);
 }
 
 .plan-price {
   font-size: .9rem;
   font-weight: 500;
-  color:hsl(231, 11%, 63%);
+  color: hsl(231, 11%, 63%);
 }
 
 /* MONTHLY AND YEARLY */
 .subscription-method {
-  background-color:hsl(217, 100%, 97%);
+  background-color: hsl(217, 100%, 97%);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: .2em;
 
 }
+
 .switch {
   width: 50px;
   height: 25px;
-  background-color:hsl(213, 96%, 18%);
+  background-color: hsl(213, 96%, 18%);
   padding: .2em;
   border-radius: 50px;
 
@@ -239,7 +244,7 @@ label {
 .switch-toggle {
   height: 18px;
   width: 18px;
-  background-color:hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   border-radius: 50%;
   position: relative;
   left: 0px;
@@ -254,7 +259,7 @@ label {
 .sub-bonus {
   margin-top: .4em;
   font-size: .9rem;
-  color:hsl(213, 96%, 18%);
+  color: hsl(213, 96%, 18%);
   font-weight: 600;
 }
 
@@ -290,16 +295,16 @@ label {
 .add-on-heading {
   font-weight: bolder;
   font-size: 1rem;
-  color:hsl(213, 96%, 18%);
+  color: hsl(213, 96%, 18%);
 }
 
 .add-on-info {
   font-size: .8rem;
-  color:hsl(231, 11%, 63%);
+  color: hsl(231, 11%, 63%);
 }
 
 .add-on-price {
-  color:hsl(243, 100%, 62%);
+  color: hsl(243, 100%, 62%);
   font-size: bolder;
 }
 
@@ -310,7 +315,7 @@ label {
 
 /* FINISHING UP */
 .finish-up {
-  background-color:hsl(217, 100%, 97%);
+  background-color: hsl(217, 100%, 97%);
   padding: .5em;
   border-radius: 8px;
   color: hsl(231, 11%, 63%);
@@ -320,9 +325,10 @@ label {
   margin: 1em 0;
 }
 
-.confirm-plan, .total-amount {
+.confirm-plan,
+.total-amount {
   font-weight: bold;
-  color:hsl(213, 96%, 18%);
+  color: hsl(213, 96%, 18%);
 }
 
 .c-plan {
@@ -340,7 +346,8 @@ label {
   color: hsl(231, 11%, 63%);
 }
 
-.total-mo-yr, .total-amount {
+.total-mo-yr,
+.total-amount {
   margin-top: 1em;
 }
 
@@ -350,7 +357,8 @@ label {
 
 
 
-.confirm-plan, .active-finish{
+.confirm-plan,
+.active-finish {
   display: grid;
   grid-template-columns: 4fr 1.5fr;
   grid-row-gap: 1em;
@@ -364,9 +372,11 @@ label {
   text-align: center;
   color: hsl(231, 11%, 63%);
 }
+
 .hidden {
   display: none;
 }
+
 .thanks-icon {
   width: 3.5em;
   margin: 2em 0;
@@ -377,17 +387,23 @@ label {
   line-height: 1.5em;
   font-size: 1.1rem;
 }
+
 /* Js */
 .hidden {
   display: none;
 }
 
-.name-err-message, .no-err-message, .mail-err-message {
+.name-err-message,
+.no-err-message,
+.mail-err-message {
   font-size: .7rem;
-  color: hsl(354, 84%, 57%);;
+  color: hsl(354, 84%, 57%);
+  ;
 }
 
-.email-field, .number-field, .name-field {
+.email-field,
+.number-field,
+.name-field {
   border: 1px solid hsl(229, 24%, 87%);
 }
 
@@ -396,6 +412,7 @@ label {
 }
 
 @media (min-width: 500px) {
+
   /* PERSONAL INFO */
   .active-view {
     width: 80%;
@@ -434,7 +451,8 @@ label {
     top: 10px;
   }
 
-  .prev-btn, .next-btn {
+  .prev-btn,
+  .next-btn {
     font-size: 1.1rem;
   }
 
@@ -444,7 +462,7 @@ label {
   }
 
   .plan-icon {
-    width:2.5em;
+    width: 2.5em;
   }
 
   .plan-heading {
@@ -470,11 +488,13 @@ label {
   }
 
   /* FINISHING UP */
-  .confirm-plan, .actve-finish {
+  .confirm-plan,
+  .actve-finish {
     font-size: 1rem;
   }
 
-  .confirm-add-on, .total {
+  .confirm-add-on,
+  .total {
     font-size: 1rem;
   }
 
@@ -482,6 +502,7 @@ label {
   #thank-you h2 {
     font-size: 2rem;
   }
+
   .thanks {
     font-size: 1.25rem;
   }
@@ -545,7 +566,7 @@ label {
     top: 0px;
     left: 80px;
     width: 76%;
-    
+
   }
 
   .info-text {
@@ -566,19 +587,19 @@ label {
     margin-left: 1.5em;
   }
 
-  .step{
+  .step {
     padding: 5px 12px;
   }
 
   .steps {
     display: flex;
-    color:hsl(231, 100%, 99%);
+    color: hsl(231, 100%, 99%);
     margin: 1em 0 .5em 2em;
   }
 
   .step-no {
     font-size: .8rem;
-    color:hsl(229, 24%, 87%)
+    color: hsl(229, 24%, 87%)
   }
 
   .step-label {
@@ -590,6 +611,7 @@ label {
   .active-view {
     justify-content: space-between;
   }
+
   .active-toggle-plan {
     flex-direction: row;
     justify-content: space-between;
@@ -600,7 +622,7 @@ label {
     padding: .5em 3em .5em .5em;
   }
 
-  .plan-icon{
+  .plan-icon {
     margin-bottom: 1.7em;
   }
 
@@ -617,7 +639,7 @@ label {
 
   .sub-bonus {
     font-size: .7rem;
-  } 
+  }
 
   /* ADD ONS */
   .add-on {
