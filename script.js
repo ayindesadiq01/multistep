@@ -5,7 +5,8 @@ const previousButton = document.querySelector('.prev-btn');
 const stepIcons = document.querySelectorAll('.step');
 const textBoxs =document.querySelectorAll('.text-box');
 const inView = document.querySelector('.in-view');
-const thankYou = document.querySelector('.thank-you');
+const thankYou = document.querySelector('.thank-you')
+const nxtFold = document.querySelector('.nxt-btn');
 
 
 // INPUT FIELD
@@ -120,6 +121,11 @@ nextButton.addEventListener('click', function(){
       if(activeIndex === 3) {
         nextButton.textContent = 'Confirm';
       }
+
+      if(activeIndex > 3) {
+        console.log('long')
+        nxtFold.style.display ='none'
+      }
     }
     
     //Providing Thank you message on the last page
@@ -171,22 +177,6 @@ nextButton.addEventListener('click', function(){
       }
     })
     
-    // SWITCHING TOGGLES
-    switchBtn.addEventListener('click', e =>{
-      switchToggle.classList.toggle('active-toggle');
-      
-      // CHANGING OF PLAN
-      monthPlan.classList.toggle('active-toggle-plan');
-      yearPlan.classList.toggle('active-toggle-plan');
-      
-      // CHANGING OF ADDS ON
-      monthAddOns.classList.toggle('active-add-ons');
-      yearAddOns.classList.toggle('active-add-ons');
-      
-      // CHANGING OF FINISH UP PLAN
-      finishMonth.classList.toggle('active-finish');
-      finishYear.classList.toggle('active-finish');
-    });
 
 
     let fAmountValue;
@@ -262,6 +252,24 @@ nextButton.addEventListener('click', function(){
         }
       })
     })
+    
+    
+    // SWITCHING TOGGLES
+    switchBtn.addEventListener('click', e =>{
+      switchToggle.classList.toggle('active-toggle');
+      
+      // CHANGING OF PLAN
+      monthPlan.classList.toggle('active-toggle-plan');
+      yearPlan.classList.toggle('active-toggle-plan');
+      
+      // CHANGING OF ADDS ON
+      monthAddOns.classList.toggle('active-add-ons');
+      yearAddOns.classList.toggle('active-add-ons');
+      
+      // CHANGING OF FINISH UP PLAN
+      finishMonth.classList.toggle('active-finish');
+      finishYear.classList.toggle('active-finish');
+    });
 
   }
 })
